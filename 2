@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand:100,300,500">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family: 'Quicksand', 'sans-serif'
+        }
+        html, body {
+            margin: 0;
+        }
+        .fullscreen {
+            background-image: url("foster-lake.jpg");
+            height: 100vh;
+            width: 100vw;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .login {
+            padding: 50px 30px;
+            width: 30%;
+            background: rgba( 255, 255, 255, 0.7 );
+            box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+            backdrop-filter: blur( 3.5px );
+            -webkit-backdrop-filter: blur( 3.5px );
+            border-radius: 10px;
+            border: 1px solid rgba( 255, 255, 255, 0.18 );
+        }
+        .login-header {
+            text-align: center;
+            margin: 0;
+            margin-bottom: 40px;
+            font-size: 2.0em;
+            font-weight: normal;
+        }
+        .inputs {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+        .inputs label {     
+            font-size: 1em;
+            margin-bottom: 7px;
+        }
+        .inputs input{
+            background-color: hsla(0, 0%, 100%, 0.61);
+            border: 1px solid rgba(0, 0, 0, 0.5); 
+            outline: none;
+            font-size: 1em;
+            padding: .1em .25em;   
+            border-radius: 3px;
+        }
+        .inputs input:focus {
+            border: 1px solid black
+        }
+        .button {
+            padding: 10px 30px;
+            background-color:hsla(201, 45%, 75%, 0.6);
+            width: 100%;
+            border-radius: 5px;
+            border: 1px solid black;
+            outline: none;
+            font-size: 1.3em;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color:hsla(201, 45%, 75%, 0.9);
+        }
+        .button:focus {
+            background-color:hsla(201, 45%, 75%);
+        }
+    </style>
+    <div class="fullscreen">
+        <div class="login">
+            <h3 class="login-header">Willkommen</h3>
+            <form>
+                <div class="inputs">
+                    <label>E-Mail Adresse</label>
+                    <input type="email">
+                </div>
+                <div class="inputs">
+                    <label>Passwort</label>
+                    <input type="password">
+                </div>
+                <button type="submit" class="button">Anmelden</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
